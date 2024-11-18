@@ -1,4 +1,3 @@
-
 function openEmbed(evt, embed) {
   // Declare all variables
   var i, tabcontent, tablinks;
