@@ -12,18 +12,7 @@ function openEmbed(evt, embed) {
   document.getElementById(embed).style.display = "block";
   evt.currentTarget.className += " active";
 }
-function cancelFullScreen() {
-  let el = document;
-  var requestMethod = el.cancelFullScreen||el.webkitCancelFullScreen||el.mozCancelFullScreen||el.exitFullscreen||el.webkitExitFullscreen;
-  if (requestMethod) { // cancel full screen.
-    requestMethod.call(el);
-  } else if (typeof window.ActiveXObject !== "undefined") { // Older IE.
-    let wscript = new ActiveXObject("WScript.Shell");
-    if (wscript !== null) {
-      wscript.SendKeys("{F11}");
-    }
-  }
-}
+
 
 function cancelFullScreen() {
   var el = document;
